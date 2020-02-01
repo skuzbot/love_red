@@ -1,0 +1,23 @@
+{
+  "name": "love_red",
+  "version": "1.0.0",
+  "description": "NextJS app with server side rendering and Phoenix API",
+  "main": "index.js",
+  "author": "Valentin Mihov",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node node_modules/exit_on_eof/index.js node_modules/next/dist/bin/next",
+    "build": "next build",
+    "start": "next start",
+    "test-server": "WEBSITE_URL=http://localhost:4001 node node_modules/exit_on_eof/index.js 'node_modules/next/dist/bin/next -p 3001' > /dev/null"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^2.0.0",
+    "next": "^4.1.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "exit_on_eof": "^1.0.4"
+  }
+}
