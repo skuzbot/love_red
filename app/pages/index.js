@@ -1,11 +1,13 @@
 import Layout from '../components/Layout.js'
 import TodoList from '../components/TodoList.js'
+import AddTodo from '../components/AddTodo.js'
 import fetch from 'isomorphic-unfetch'
 import { WEBSITE_URL } from '../config'
 
 const Index = (props) => (
   <Layout>
     <p>Your current shopping list:</p>
+    <AddTodo />
     <TodoList items={props.items}/>
   </Layout>
 )
